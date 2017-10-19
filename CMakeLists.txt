@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(ransac)
+project(demo/ransac)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -13,6 +13,6 @@ endif()
 
 
 set(SOURCE_FILES main.cpp ransac.h ransac.cpp)
-add_executable(ransac ${SOURCE_FILES})
+add_executable(demo/ransac ${SOURCE_FILES})
 
-target_link_libraries(ransac LINK_PUBLIC ${Boost_LIBRARIES} boost_program_options)
+target_link_libraries(demo/ransac LINK_PUBLIC ${Boost_LIBRARIES} boost_program_options)
